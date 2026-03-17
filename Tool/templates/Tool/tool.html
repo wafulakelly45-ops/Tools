@@ -1,0 +1,15 @@
+{% extends "Tool/layout.html"%}
+
+{%block body%}
+<div class="item">
+      <h1>Tool {{ tool.id }}</h1>
+    <ul>
+        <img src="{{ tool.cover.url}}" alt="{{ tool.id }}" > 
+        <li class="Name">{{ tool.Name }}</li>
+        <div><li class="white">Description :   {{tool.Description}}</li></div>
+        
+    </ul>
+</div>
+    <a href="{% url 'index' %}">All Tools</a>
+
+{%endblock%}

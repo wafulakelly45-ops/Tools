@@ -1,0 +1,76 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: dodgerblue;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+ 
+  
+}
+.color img{
+   background-color: green;
+   font-size: 20px;
+   margin: 20px;
+   padding: 20px;
+   width: 800px;   
+
+
+}
+.frm{
+padding: 20px;
+margin: 20px;  
+}
+.inp{
+  display: block;
+  padding: 20px;
+}
+.frm{
+  padding: 60px;
+  width: 600px;
+  margin-right: 20px;
+
+}
+.sbmt{
+ padding: 10px;
+ width: 200px;
+}
+.BTN{
+  padding: 10px;
+  width: 600px;
+}
+.usr{
+  position: relative;
+  
+}
