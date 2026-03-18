@@ -32,4 +32,5 @@ EXPOSE ${PORT:-10000}
 # At container start: migrate → start server
 # Replace 'andy' below with your ACTUAL Django project name!
 #   → look inside the folder containing settings.py / wsgi.py (probably 'andy' or 'ANDY')
-CMD ["sh", "-c", "python manage.py migrate && gunicorn andy.wsgi:application --bind 0.0.0.0:${PORT:-10000} --workers 3 --timeout 30"]
+
+CMD ["sh", "-c", "python manage.py migrate && gunicorn MyTool.wsgi:application --bind 0.0.0.0:${PORT:-10000} --workers 3 --timeout 30"]
